@@ -1,6 +1,8 @@
-import { useState } from "react";
+import styles from "@styles/input.module.css";
+import { useId, useState } from "react";
 
-export default function Input({ type = "text", defaultValue = "", placeholder }) {
+export default function Input({ type = "text", defaultValue = "", placeholder , label}) {
+  const id = useId();
   const [value, setValue] = useState(defaultValue);
 
   const handleChange = (e) => {
@@ -8,11 +10,16 @@ export default function Input({ type = "text", defaultValue = "", placeholder })
   };
 
   return (
-    <input
-      type={type}
-      value={value}
-      onChange={handleChange}
-      placeholder={placeholder}
-    />
+    <div className={`${styles.inputField} ${value ? "filled" : ""}`}>
+      <input
+        type={type}
+        id={id}
+        value={value}
+        onChange={handleChange}
+        placeholder={placeholder}
+      />
+      <label htmlFor={id}>{label}</label>
+    </div>
+    
   )
 }

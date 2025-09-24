@@ -1,7 +1,8 @@
-import styles from "@styles/checkbox.css";
-import { useState } from "react";
+import styles from "@styles/checkbox.module.css";
+import { useId, useState } from "react";
 
 export default function Checkbox({ name, defaultChecked = false, label }) {
+  const id = useId();
   const [checked, setChecked] = useState(defaultChecked);
 
   const handleChange = (e) => {
@@ -12,12 +13,12 @@ export default function Checkbox({ name, defaultChecked = false, label }) {
     <div className={styles.checkboxContainer}>
       <input
         type="checkbox"
-        id={name}
+        id={id}
         name={name}
         checked={checked}
         onChange={handleChange}
       />
-      <label htmlFor={name}>{label}</label>
+      <label htmlFor={id}>{label}</label>
     </div>
     
   )
