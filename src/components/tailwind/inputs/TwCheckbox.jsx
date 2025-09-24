@@ -1,7 +1,6 @@
-import styles from "@styles/checkbox.css";
 import { useState } from "react";
 
-export default function Checkbox({ name, defaultChecked = false, label }) {
+export default function TwCheckbox({ name, defaultChecked = false, label }) {
   const [checked, setChecked] = useState(defaultChecked);
 
   const handleChange = (e) => {
@@ -9,7 +8,7 @@ export default function Checkbox({ name, defaultChecked = false, label }) {
   };
 
   return (
-    <div className={styles.checkboxContainer}>
+    <div className="">
       <input
         type="checkbox"
         id={name}
