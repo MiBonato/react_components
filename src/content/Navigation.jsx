@@ -1,6 +1,6 @@
-import Navbar from '../components/navigation/Navbar'
-import Progressbar from '../components/navigation/Progressbar'
-import Sidebar from '../components/navigation/Sidebar'
+import Navbar from '@components/custom/navigation/Navbar'
+import Progressbar from '@components/custom/navigation/Progressbar'
+import Sidebar from '@components/custom/navigation/Sidebar'
 
 export default function Navigation() {
   return (

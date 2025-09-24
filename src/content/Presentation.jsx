@@ -1,7 +1,7 @@
-import Accordion from '../components/presentation/Accordion'
-import Dropdown from '../components/presentation/Dropdown'
-import List from '../components/presentation/List'
-import Table from '../components/presentation/Table'
+import Accordion from '@components/custom/presentation/Accordion'
+import Dropdown from '@components/custom/presentation/Dropdown'
+import List from '@components/custom/presentation/List'
+import Table from '@components/custom/presentation/Table'
 
 export default function Overlay() {
   return (
