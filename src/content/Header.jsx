@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import { NAV } from '@/routes/nav'
 
 const navItems = [
   { to: '/', label: 'Home' },

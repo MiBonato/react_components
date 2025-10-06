@@ -1,0 +1,15 @@
+/* footer */
+.footer {
+  height: 6rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  box-shadow: inset 0 1.5rem 1rem -1rem rgba(0, 77, 154, 0.1);
+}
+@media screen and (min-width: 768px) {
+    .footer {
+        height: 6rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        box-shadow: inset 0 1.5rem 1rem -1rem rgba(0, 77, 154, 0.1);
+    }
+}
