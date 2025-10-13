@@ -4,11 +4,13 @@
 .checkboxContainer input[type="checkbox"] + label {
   position: relative;
   cursor: pointer;
+  padding-left: 3rem;
+  line-height: 2.4rem;
 }
 .checkboxContainer input[type="checkbox"] + label::before{
   content: '';
   position: absolute;
-  top: 0.2rem;
+  top: -0.4rem;
   left: 0;
   border: 0.3rem solid transparent;
   transform: rotateZ(37deg);

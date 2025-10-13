@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom'
-import { useState } from 'react'
 import Home from '@content/Home'
 import Header from '@content/Header'
 import Buttons from '@content/ButtonsList'
@@ -22,8 +21,6 @@ function NotFound() {
 }
 
 export default function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div className="min-h-dvh bg-white text-gray-900">
@@ -43,14 +40,6 @@ export default function App() {
         </main>
       </div>
 
-      <div className="mt-8">
-        <button
-          className="px-3 py-2 rounded bg-blue-600 text-white"
-          onClick={() => setCount((c) => c + 1)}
-        >
-          count is {count}
-        </button>
-      </div>
       <Footer />
     </>
   )
